@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    background-color:  white;
+    font-family : "Georgia", serif;
+}
+
+.profile {
+    border-radius: 5%;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: white;
+    padding: 10px;
+}
+.grid-item {
+    animation: fadeIn 2s;
+    font-family : "Garamond", serif;
+    background-color: transparent;
+    border: transparent;
+    padding: 20px;
+    font-size: 20px;
+    text-align: left;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+.title {
+    animation: fadeIn 5s;
+    color : cornflowerblue;
+    background-color: transparent;
+    width:100%;
+    padding: 10px;
+    border-bottom: transparent;
+    font-size: 75px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.menu {
+    display: inline-block;
+}
+
+.menu-button {
+    background-color: cornflowerblue;
+    color: white;
+    padding: 10px;
+    font-size: 75px;
+    border: none;
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.menu-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-content a:hover {background-color: #ddd;}
+
+.menu:hover .menu-content {display: block;}
+
+.menu:hover .menu-button {background-color: lightskyblue;}
+
+/*
+.nav-bar {
+    animation: fadeIn 3s;
+    background-color: #dddddd;
+    text-align: center;
+    padding: 0;
+}
+
+ul.nav {
+    color: cornflowerblue;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width:100%;
+}
+
+li.nav {
+    display: block;
+    padding: 8px;
+    background-color: lightblue;
+}
+
+li.nav:hover{
+    background-color: lightskyblue;
+}
+*/
+
+
+.text{
+    color : #253652;
+    margin: 5px;
+}
+
+.contact-bar {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    position:fixed;
+    background-color: lightblue;
+    width : 100%;
+    bottom: 0;
+}
+
+.contact {
+    color : cornflowerblue;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    border: 1px solid cornflowerblue;
+}

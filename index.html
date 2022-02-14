@@ -1,73 +1,74 @@
-<html>
+<!DOCTYPE html>
 
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+<link rel="stylesheet" href="stylesheet.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oliver Feighan</title>
+</head>
 <body>
-<table>
-	<tr>
-		<td colspan="4"><p id="output"><br/></p></td>
-	</tr>
-	<tr>
-		<td>
-			<input type="button" value="1" onclick="write_to_output('1')">
-		</td>
-		<td>
-			<input type="button" value="2" onclick="write_to_output('2')">
-		</td>
-		<td>
-			<input type="button" value="3" onclick="write_to_output('3')">
-		</td>
-		<td>
-			<input type="button" value="+" onclick="write_to_output('+')">
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<input type="button" value="4" onclick="write_to_output('4')">
-		</td>
-		<td>
-			<input type="button" value="5" onclick="write_to_output('5')">
-		</td>
-		<td>
-			<input type="button" value="6" onclick="write_to_output('6')">
-		</td>
-		<td>
-			<input type="button" value="-" onclick="write_to_output('-')">
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<input type="button" value="7" onclick="write_to_output('7')">
-		</td>
-		<td>
-			<input type="button" value="8" onclick="write_to_output('8')">
-		</td>
-		<td>
-			<input type="button" value="9" onclick="write_to_output('9')">
-		</td>
-		<td>
-			<input type="button" value="*" onclick="write_to_output('*')">
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<input type="button" value="C" onclick="write_to_output('C')">
-		</td>
-		<td>
-			<input type="button" value="0" onclick="write_to_output('0')">
-		</td>
-		<td>
-			<input type="button" value="." onclick="write_to_output('.')">
-		</td>
-		<td>
-			<input type="button" value="/" onclick="write_to_output('/')">
-		</td>
-	</tr>
-	<tr>
-		<td colspan="4">
-			<input type="button" value="=" onclick="write_to_output('=')">
-		</td>
-	</tr>
-</table>
 
-<script src="./javascript_test.js"></script>
+<div class="grid-container">
+    <div class="grid-item">
+        <div class="title">
+            Oliver Feighan
+        </div>
+    </div>
+
+    <div class="grid-item">
+        <div class="menu">
+            <button class="menu-button">&nbsp;&#8801;&nbsp;</button>
+            <div class="menu-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <!--
+        <div id="nav-placeholder"></div>
+        <script>
+            $(function(){
+                $("#nav-placeholder").load("navigation_bar.html");
+            });
+        </script>
+        -->
+    </div>
+</div>
+
+<div class="grid-container">
+        <div class="grid-item"></div>
+        <div class="grid-item">
+            <p>Hi!</p>
+
+            <p>I'm Oliver Feighan, PhD candidate in quantum chemistry. My background is
+            in electronic structure codes, but I have an interest in anything molecular,
+            numeric or computational.</p>
+
+            <p>I've previously worked on a range of chemistry projects. On the scientific side,
+            I've looked at tight-binding models and exciton theory to model light harvesting
+            proteins, as well as methods for improving the success of SCF
+            iterations in DFT calculations of large metal centre molecules.</p>
+
+            <p>On the software development side, I've worked in different languages (python,
+            C++ and a little fortran) to implement whole force-field methods and mean-field
+            response programs down to writing machine-learning scripts and perform data analysis.<p/>
+
+            <p>Please find my contact details, CVs, personal history and other information here.</p>
+
+        </div>
+        <div class="grid-item">
+            <img src="imgs/profile.jpg" alt="headshot of Oliver Feighan" class="profile">
+        </div>
+</div>
+
+
+<div class="contact-bar">
+    <div class="contact">1</div>
+    <div class="contact">2</div>
+    <div class="contact">3</div>
+</div>
+
 </body>
 </html>
