@@ -21,10 +21,6 @@ body {
     height: 100%;
 }
 
-.profile:hover {
-    transform:  scale(-1, 1);
-}
-
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -45,7 +41,6 @@ body {
 }
 
 .title {
-    animation: FadeIn 5s;
     color : cornflowerblue;
     background-color: transparent;
     width:100%;
@@ -61,7 +56,6 @@ body {
 }
 
 .menu-button {
-    animation: FadeIn 5s;
     background-color: cornflowerblue;
     color: white;
     padding: 10px;

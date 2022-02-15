@@ -10,11 +10,33 @@
 </head>
 <body>
 
-<div id="title"></div>
+<!--
+<div id="title" style="animation: FadeIn 2s"></div>
+-->
+
+<div class="grid-container" style="animation: FadeIn 2s">
+    <div class="grid-item">
+        <div class="title">
+            Oliver Feighan
+        </div>
+    </div>
+
+    <div class="grid-item">
+        <div class="menu">
+            <button class="menu-button">&nbsp;&#8801;&nbsp;</button>
+            <div class="menu-content">
+                <a href="/Oliver-Feighan.github.io/index.html">Home</a>
+                <a href="/Oliver-Feighan.github.io/src/CVs.html">CVs</a>
+                <a href="/Oliver-Feighan.github.io/src/personal_history.html">Personal History</a>
+                <a href="/Oliver-Feighan.github.io/src/Logs.html">Logs</a>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="grid-container">
         <div class="grid-item"></div>
-        <div class="grid-item" style="animation: FadeIn 5s">
+        <div class="grid-item" style="animation: FadeIn 2s">
             <p>Hi!</p>
 
             <p>I'm Oliver Feighan, PhD candidate in quantum chemistry. My background is
@@ -37,13 +59,11 @@
         </div>
 </div>
 
-<div id="contact-bar"></div>
-<script>
-    $(function(){
-        $("#title").load("/Oliver-Feighan.github.io/src/title.html")
-        $("#contact-bar").load("/Oliver-Feighan.github.io/src/contact_bar.html")
-    })
-</script>
+<div class="contact-bar">
+    <div class="contact"> <a href="mailto:oliverfeighan1996@gmail.com">Email</a></div>
+    <div class="contact"> <a href="https://github.com/oliver-feighan/">Github</a></div>
+    <div class="contact"> <a href="https://www.linkedin.com/in/oliver-feighan/">LinkedIn</a></div>
+</div>
 
 </body>
 </html>
