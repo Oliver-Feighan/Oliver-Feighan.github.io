@@ -10,41 +10,16 @@
 </head>
 <body>
 
-<div class="grid-container">
-    <div class="grid-item">
-        <div class="title">
-            Oliver Feighan
-        </div>
-    </div>
-
-    <div class="grid-item">
-        <div class="menu">
-            <button class="menu-button">&nbsp;&#8801;&nbsp;</button>
-            <div class="menu-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-            </div>
-        </div>
-        <!--
-        <div id="nav-placeholder"></div>
-        <script>
-            $(function(){
-                $("#nav-placeholder").load("navigation_bar.html");
-            });
-        </script>
-        -->
-    </div>
-</div>
+<div id="title"></div>
 
 <div class="grid-container">
         <div class="grid-item"></div>
-        <div class="grid-item">
+        <div class="grid-item" style="animation: FadeIn 5s">
             <p>Hi!</p>
 
             <p>I'm Oliver Feighan, PhD candidate in quantum chemistry. My background is
-            in electronic structure codes, but I have an interest in anything molecular,
-            numeric or computational.</p>
+            in electronic structure codes, but I'm interested in anything molecular,
+            data science or computational.</p>
 
             <p>I've previously worked on a range of chemistry projects. On the scientific side,
             I've looked at tight-binding models and exciton theory to model light harvesting
@@ -53,8 +28,7 @@
 
             <p>On the software development side, I've worked in different languages (python,
             C++ and a little fortran) to implement whole force-field methods and mean-field
-            response programs down to writing machine-learning scripts and perform data analysis.<p/>
-
+            response programs down to writing machine-learning scripts and perform data analysis.</p>
             <p>Please find my contact details, CVs, personal history and other information here.</p>
 
         </div>
@@ -63,12 +37,12 @@
         </div>
 </div>
 
-
-<div class="contact-bar">
-    <div class="contact">1</div>
-    <div class="contact">2</div>
-    <div class="contact">3</div>
-</div>
+<div id="contact-bar"></div>
+<script>
+    $(function(){
+        $("#contact-bar").load("/WebProject/src/contact_bar.html")
+    })
+</script>
 
 </body>
 </html>

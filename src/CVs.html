@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+
+<link rel="stylesheet" href="../stylesheet.css">
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+<div id="title"></div>
+
+<div class="grid-container">
+    <div class="grid-item">
+    <p>Some CVs</p>
+    </div>
+</div>
+
+<div id="contact-bar"></div>
+
+
+<script>
+    $(function(){
+        $("#title").load("/WebProject/src/title.html");
+        $("#contact-bar").load("/WebProject/src/contact_bar.html");
+    })
+</script>

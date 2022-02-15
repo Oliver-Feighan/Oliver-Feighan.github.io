@@ -1,7 +1,17 @@
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
 body {
     margin: 0;
     background-color:  white;
-    font-family : "Georgia", serif;
 }
 
 .profile {
@@ -11,6 +21,10 @@ body {
     height: 100%;
 }
 
+.profile:hover {
+    transform:  scale(-1, 1);
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -18,7 +32,6 @@ body {
     padding: 10px;
 }
 .grid-item {
-    animation: fadeIn 2s;
     font-family : "Garamond", serif;
     background-color: transparent;
     border: transparent;
@@ -27,13 +40,17 @@ body {
     text-align: left;
 }
 
-@keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
+.grid-item p{
+    color : darkblue;
+}
+
+.grid-item p:hover{
+    font-size: 25px;
+    color : black;
 }
 
 .title {
-    animation: fadeIn 5s;
+    animation: FadeIn 5s;
     color : cornflowerblue;
     background-color: transparent;
     width:100%;
@@ -49,6 +66,7 @@ body {
 }
 
 .menu-button {
+    animation: FadeIn 5s;
     background-color: cornflowerblue;
     color: white;
     padding: 10px;
@@ -59,57 +77,24 @@ body {
 .menu-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: lightblue;
     min-width: 160px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .menu-content a {
-    color: black;
+    color : cornflowerblue;
+    font-family : "Garamond", serif;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
-.menu-content a:hover {background-color: #ddd;}
+.menu-content a:hover {background-color: lightskyblue;}
 
 .menu:hover .menu-content {display: block;}
 
 .menu:hover .menu-button {background-color: lightskyblue;}
-
-/*
-.nav-bar {
-    animation: fadeIn 3s;
-    background-color: #dddddd;
-    text-align: center;
-    padding: 0;
-}
-
-ul.nav {
-    color: cornflowerblue;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    width:100%;
-}
-
-li.nav {
-    display: block;
-    padding: 8px;
-    background-color: lightblue;
-}
-
-li.nav:hover{
-    background-color: lightskyblue;
-}
-*/
-
-
-.text{
-    color : #253652;
-    margin: 5px;
-}
 
 .contact-bar {
     display: grid;
@@ -123,6 +108,7 @@ li.nav:hover{
 .contact {
     color : cornflowerblue;
     text-align: center;
+    font-size: x-large;
     margin: 0;
     padding: 10px;
     border: 1px solid cornflowerblue;
