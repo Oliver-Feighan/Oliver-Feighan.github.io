@@ -44,11 +44,6 @@ body {
     color : darkblue;
 }
 
-.grid-item p:hover{
-    font-size: 25px;
-    color : black;
-}
-
 .title {
     animation: FadeIn 5s;
     color : cornflowerblue;
